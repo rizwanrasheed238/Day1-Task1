@@ -1,0 +1,181 @@
+<html>
+<head>
+  <title>Login Form</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+    .form-container {
+      width: 350px;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    form {
+      text-align: center;
+    }
+    form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+    }
+    form select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+    }
+    form label {
+      display: block;
+      text-align: left;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .remember-me {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    form input[type="checkbox"] {
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+    form a {
+      display: block;
+      text-align: right;
+      margin-bottom: 15px;
+      color: #007BFF;
+      text-decoration: none;
+    }
+    form button {
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 20px;
+      cursor: pointer;
+      width: 100%;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #f0f0f0;
+      padding: 20px;
+      text-align: center;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer a {
+      margin-right: 10px;
+    }
+
+    footer p {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Login</h2>
+    <form>
+        <label for="firstname">First Name:</label>
+        <input type="firstname" id="firstname" name="firstname" placeholder="Enter your First name"><br>
+        <label for="lastname">Last Name:</label>
+        <input type="lastname" id="lastname" name="lastname" placeholder="Enter your Last name"><br>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" placeholder="Enter the Date"><br>
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" placeholder="Enter Age"><br>
+        <label for="gender">Gender</label>
+        <select>Gender
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" placeholder="Enter Number"><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br>
+        <label for="address">Address:</label>
+        <input type="textarea" id="address" name="address" placeholder="Enter the Address"><br>
+        <label for="state">State:</label>
+        <select name="state" id="state">
+    <option value="">Select State</option>
+    <option value="Andhra Pradesh">Andhra Pradesh</option>
+    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+    <option value="Assam">Assam</option>
+    <option value="Bihar">Bihar</option>
+    <option value="Chhattisgarh">Chhattisgarh</option>
+    <option value="Goa">Goa</option>
+    <option value="Gujarat">Gujarat</option>
+    <option value="Haryana">Haryana</option>
+    <option value="Himachal Pradesh">Himachal Pradesh</option>
+    <option value="Jharkhand">Jharkhand</option>
+    <option value="Karnataka">Karnataka</option>
+    <option value="Kerala">Kerala</option>
+    <option value="Madhya Pradesh">Madhya Pradesh</option>
+    <option value="Maharashtra">Maharashtra</option>
+    <option value="Manipur">Manipur</option>
+    <option value="Meghalaya">Meghalaya</option>
+    <option value="Mizoram">Mizoram</option>
+    <option value="Nagaland">Nagaland</option>
+    <option value="Odisha">Odisha</option>
+    <option value="Punjab">Punjab</option>
+    <option value="Rajasthan">Rajasthan</option>
+    <option value="Sikkim">Sikkim</option>
+    <option value="Tamil Nadu">Tamil Nadu</option>
+    <option value="Telangana">Telangana</option>
+    <option value="Tripura">Tripura</option>
+    <option value="Uttar Pradesh">Uttar Pradesh</option>
+    <option value="Uttarakhand">Uttarakhand</option>
+    <option value="West Bengal">West Bengal</option>
+    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+    <option value="Chandigarh">Chandigarh</option>
+    <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
+    <option value="Lakshadweep">Lakshadweep</option>
+    <option value="Delhi">Delhi</option>
+    <option value="Puducherry">Puducherry</option>
+        </select>
+      
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" placeholder="Enter city"><br>        <!-- will do js on day 3 -->
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter Username"><br>
+        
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password"><br>
+      <label for="confirmpassword">Confirm Password:</label>
+      <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Enter your password again"><br>
+        
+        
+        <button type="submit">Sign Up</button>
+    </form>
+  </div>
+  <footer class="footer">
+    <p> 2023 Claysys. All rights reserved.</p>
+    <p>
+      <a href="facebook.com"><img src="fb.png" alt="Facebook" style="height:30px"></a>
+      <a href="twitter.com"><img src="twitter.jpeg" alt="Twitter" style="height:30px"></a>
+      <a href="linkedin.com"><img src="linkedin.png" alt="LinkedIn" style="height:30px"></a>
+    </p>
+    <p>Claysys</p>
+    <p>Kakkanad</p>
+    <p>Kochi, Kerala</p>
+  </footer>
+</body>
+</html>
